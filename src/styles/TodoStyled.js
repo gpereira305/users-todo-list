@@ -121,3 +121,51 @@ export const TodoMessageH2 = styled.h2`
     font-size: 1.1rem;
   }
 `;
+
+//  TODO USER COMPONENT
+export const TodoUserContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 10px 5%;
+
+    @media (max-width: 890px) { 
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width: 720px) { 
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 520px) { 
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 420px) { 
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+  div {
+    background-color: #ccc;
+    padding: 20px;
+    > h3 {
+      margin: 0;
+      font-weight: 400;
+    }
+  } 
+`
+
+//  TODO LOADING COMPONENT
+export const TodoLoadingContainer = styled.div`
+  position: absolute;
+  width: 100%; 
+  background: rgb(240 248 255 / 65%); 
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+ > h2 {
+   margin: 0;
+   font-weight: 400;
+ }
+`
