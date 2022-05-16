@@ -4,10 +4,7 @@
 
 <img src="./src/assets/images/Screenshot-2.png">
 
-### Status do projeto: 
-<h4 align="center"> Concluído </h4>
-
----
+ 
 
 ## Sobre o projeto  
 <p>
