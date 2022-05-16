@@ -12,6 +12,7 @@
 ## Sobre o projeto  
 <p>
  Essa aplicação foi desenvolvida utilizando o React com a API da {JSON} Placeholder}, uma fake api com dados de usuários e lista de tarefas.
+ Para estilização optei por usar o styled-components por ser uma nova tecnologia que estou aprendendo. Também utilizei o Axios para os request da API por ser mais prático do que o Fetch nativo do DOM do browser.
  Nessa aplicação ao clicar em um usuário o abre-se uma nova página contento toda a lista de tarefa desse usuário, algumas já marcadas
  como completas e outras não. Também é possível marcar ou desmarcar qualquer tarefa como completa como adicionar uma nova às já existentes.  
 </p>
