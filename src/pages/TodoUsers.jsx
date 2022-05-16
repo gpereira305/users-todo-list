@@ -3,16 +3,18 @@ import React, { useEffect, useState } from 'react'
 import { Link } from "react-router-dom";
 import TodoLoading from '../components/TodoLoading' 
 import {apiUrl} from '../api'
-import User from '../components/User';
-import { TodoSection, TodoTitle, TodoUserGrid, TodoUsersList } from '../styles/TodoStyled';
+import TodoUser from '../components/TodoUser';
+import { TodoTitle, TodoUserGrid } from '../styles/TodoStyled';
 
 
 
 
-const TodoUsers = ({users}) => { 
+const TodoUsers = () => { 
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
+
+  // recebe o array de objetos de todos os usuários
   useEffect(() => {
     apiUrl.get("/users").then((response) => {
       setLoading(true);
@@ -20,6 +22,7 @@ const TodoUsers = ({users}) => {
       setLoading(false);
     });
   }, []);
+ 
 
   return (
     <>
@@ -32,10 +35,10 @@ const TodoUsers = ({users}) => {
                   data.map((user) =>  (  
                     <Link  key={user.id}
                         to={`/user-todo/${user.id}/${user.name}`} 
-                        title={user.name} 
+                        text={user.name} 
                       >
-                        <User id={user.id} user={user} />
-                      </Link>  
+                        <TodoUser id={user.id} user={user} />
+                    </Link>  
                   )) 
               )} 
           </TodoUserGrid> 

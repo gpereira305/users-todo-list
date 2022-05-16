@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { TodoLi } from '../styles/TodoStyled';
-import styled from "../styles/todoLista.module.css";
+import styled from "../styles/todoList.module.css"; 
 
-const TodoLista = (props) => {
+const TodoList = (props) => {
     const [state, setState] = useState(props.state);
-    const toggle = (e) => {
+
+    const toggle = () => {
         setState(!state);
-      };
+    };
 
   return (
     <TodoLi className={state ? styled.undone : styled.done}>
@@ -20,4 +21,4 @@ const TodoLista = (props) => {
   )
 }
 
-export default TodoLista
+export default TodoList

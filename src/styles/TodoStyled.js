@@ -9,6 +9,14 @@ export const TodoTitle = styled.div`
      color: #fff;
      text-transform: uppercase;
      font-weight: normal;
+
+     @media (max-width: 720px) {
+       font-size: 1.5rem; 
+     }
+   }
+
+   @media (max-width: 920px){
+     margin-top: 10%;
    }
 `;
 
@@ -16,7 +24,7 @@ export const TodoUserGrid = styled.div`
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px; 
-      padding: 10px 10%;
+      margin: 10px 8%;
 
     @media (max-width: 1290px) { 
       grid-template-columns: repeat(2, 1fr);
@@ -27,6 +35,7 @@ export const TodoUserGrid = styled.div`
     
     > a {
       text-decoration: none;
+      color: rgb(0 0 199 / 90%);
     }
 `
 
@@ -53,6 +62,7 @@ export const TodoUserGridItem = styled.div`
     > div {
       display: flex;
       flex-direction: column;
+      margin-left: 15px;
 
       h3 {
       margin: 0;
@@ -73,14 +83,6 @@ export const TodoUserGridItem = styled.div`
 `;
 
 
-
-export const TodoUserItem = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items:center ;
-`
-
-
 //  TODOLIST  COMPONENT
 export const Container = styled.section`
   width: calc(100% - 80px);
@@ -95,15 +97,14 @@ export const TodoSection = styled.div`
 
 
 export const TodoGoback = styled.div` 
- > a {
-   display: flex;
-   align-items: center;
-   text-decoration: none;
-   text-transform: uppercase;
-   color: #FFF;
- }
+  > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+  } 
 `
-
 
 export const TodoFormItem = styled.form`
   display: flex;
@@ -124,13 +125,13 @@ export const TodoInput = styled.input`
   outline: none;
 
   &:focus {
-    border: 2px rgb(0 96 0) solid;
+    border: 2px rgb(0 47 96) solid;
   }
 `;
 
 export const TodoButton = styled.button`
   min-width: 80px;
-  background: rgb(0 96 0);
+  background: rgb(0 47 96);
   border: none;
   outline: none;
   color: #fff;
@@ -150,7 +151,7 @@ export const TodoLi = styled.li`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #e7e7e7;
+  background: #fff;
   list-style-type: none;
   padding: 10px 20px;
   margin-top: 10px;
@@ -172,14 +173,11 @@ export const TodoLi = styled.li`
   }
 
   &:hover { 
-    background-color: rgb(187 237 197);
+    background-color: rgb(230 233 163);
   }
 `;
 
  
- 
-
-
 
 //  TODO LOADING COMPONENT
 export const TodoLoadingContainer = styled.div` 

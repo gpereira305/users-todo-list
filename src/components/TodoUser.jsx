@@ -1,10 +1,8 @@
 import React from "react";  
 import userImg from "../assets/images/user-lead.png" 
-import { TodoUserGridItem, TodoUserItem } from "../styles/TodoStyled";
+import { TodoUserGridItem } from "../styles/TodoStyled";
 
-const User = ({user}) => {
-
-  console.log(user)
+const TodoUser = ({user}) => { 
 
   const {
     name,
@@ -24,4 +22,4 @@ const User = ({user}) => {
   );
 };
 
-export default User;
+export default TodoUser;

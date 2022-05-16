@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# <a href="https://harmonious-cendol-c8e926.netlify.app/">🔗 To Do List APP</a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="./src/assets/images/Screenshot-1.png">
 
-## Available Scripts
+<img src="./src/assets/images/Screenshot-2.png">
 
-In the project directory, you can run:
+### Status do projeto: 
+<h4 align="center"> Concluído </h4>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Sobre o projeto  
+<p>
+ Essa aplicação foi desenvolvida utilizando o React com a API da {JSON} Placeholder}, uma fake api com dados de usuários e lista de tarefas.
+ Nessa aplicação ao clicar em um usuário o abre-se uma nova página contento toda a lista de tarefa desse usuário, algumas já marcadas
+ como completas e outras não. Também é possível marcar ou desmarcar qualquer tarefa como completa como adicionar uma nova às já existentes.  
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Funcionalidades
+- Visualizar todos os usuários na página inicial;
+- Visualizar tarefas de cada usuário, já concluídas e pendentes;
+- Inserir novas tarefas e marcá-las como concluída ou não; 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ ## Tecnologias utilizadas nessa aplicação
 
-### `npm run build`
+- <a href="https://pt-br.reactjs.org/"> React </a> 
+- <a href="https://axios-http.com/ptbr/docs/intro"> Axios </a>
+- <a href="https://jsonplaceholder.typicode.com"> Json Placeholder </a> 
+- <a href="https://styled-components.com/"> Styled-components</a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ ## Como ter essa aplicação em ambinente local
+ - Na página desse projeto no Github clique em "Code", baixe o Zip ou copie o link  do HTTPS. 
+ - Abra um terminal em uma pasta de sua escolha e cole o link HTTPS. 
+ - Certifique-se de ter instalado o Node em uma versão suiperior a 14.0. 
+ - Após baixar o pojeto em um diretório de sua escolha digite o comando "npm install". 
+ - Após o término de todas as depedências serem baixadas pelo npm digite no mesmo diretório o comando "npm start". 
+ - O seu navegador padrão irá mostrar uma nova aba com o projeto já pronto para ser usado 
+ - Caso o navegado não inciar, digite o seguinte comando "http://localhost:3000" em uma nova aba. 
