@@ -1,4 +1,4 @@
-# <a href="https://harmonious-cendol-c8e926.netlify.app/">🔗 Users todo List</a>
+# <a href="https://users-todolist.netlify.app/">🔗 Users todo List</a>
 
 <img src="./src/assets/images/Screenshot-1.png">
 
