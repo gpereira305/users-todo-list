@@ -4,44 +4,42 @@ import { Link } from "react-router-dom";
 import TodoLoading from '../components/TodoLoading' 
 import {apiUrl} from '../api'
 import User from '../components/User';
+import { TodoSection, TodoTitle, TodoUserGrid, TodoUsersList } from '../styles/TodoStyled';
 
 
 
 
 const TodoUsers = ({users}) => { 
   const [data, setData] = useState([]);
-  const [load, setLoad] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     apiUrl.get("/users").then((response) => {
-      setLoad(true);
+      setLoading(true);
       setData(response.data);
-      setLoad(false);
+      setLoading(false);
     });
   }, []);
 
   return (
-    <div>
-       <h1>Todo list</h1>
+    <>
+       <TodoTitle> 
+         <h1>Base de Usuários</h1> 
+       </TodoTitle>
 
-       <section>
-         <h2>Usuários</h2>
-         <div>
-           {load ? (<TodoLoading/>) : (
-              data.map((user) => {
-              return (
-                <Link
-                  key={user.id}
-                  to={`/todo/${user.id}/${user.name}`} 
-                >
-                  <User id={user.id} name={user.name} />
-                </Link>
-              );
-            })
-           )}
-         </div>
-       </section>
-    </div>
+          <TodoUserGrid>
+              {loading ? (<TodoLoading/>) : (  
+                  data.map((user) =>  (  
+                    <Link  key={user.id}
+                        to={`/user-todo/${user.id}/${user.name}`} 
+                        title={user.name} 
+                      >
+                        <User id={user.id} user={user} />
+                      </Link>  
+                  )) 
+              )} 
+          </TodoUserGrid> 
+    </>
   )
 }
 

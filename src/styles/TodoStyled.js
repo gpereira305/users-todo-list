@@ -1,64 +1,149 @@
 import styled from "styled-components";
 
-//  TODO APP COMPONENT
+//  TODO USERS COMPONENT 
+export const TodoTitle = styled.div`
+   text-align: center;
+   margin: 2% auto 5%;
+
+   h1 {
+     color: #fff;
+     text-transform: uppercase;
+     font-weight: normal;
+   }
+`;
+
+export const TodoUserGrid = styled.div`
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px; 
+      padding: 10px 10%;
+
+    @media (max-width: 1290px) { 
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 790px) { 
+      grid-template-columns: repeat(1, 1fr);
+    }  
+    
+    > a {
+      text-decoration: none;
+    }
+`
+
+export const TodoUserGridItem = styled.div`
+    background-color: rgb(237 237 237);
+    padding: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.3s ease;
+    min-height: 150px;
+
+    &:hover {
+      transform: translateY(-4px);
+      background-color: rgb(199 239 204);
+    }
+
+    > img {
+      width: 100px;
+      border-radius: 100%;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+      margin: 0;
+      text-transform: uppercase;
+      font-weight: normal;
+      color: #2c2c2c;
+    }
+
+    span { 
+      color: #504f4f;
+    }
+
+    small {
+      text-transform: lowercase;
+      font-size: .75rem; 
+    }
+  }
+`;
+
+
+
+export const TodoUserItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+`
+
+
+//  TODOLIST  COMPONENT
 export const Container = styled.section`
   width: calc(100% - 80px);
   margin: auto;
   letter-spacing: 1px;
 `;
 
-export const TodoWrapper = styled.div`
-  max-width: 750px;
-  margin: 5% auto;
-  min-height: 70vh;
-  background: rgb(0 0 0 / 40%);
-  padding: 30px;
+export const TodoSection = styled.div`  
+  background: rgb(0 0 0 / 70%);
+  padding: 30px; 
 `;
 
-export const TodoTitle = styled.h2`
-  margin: 0;
-  padding-top: 2%;
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-`;
+
+export const TodoGoback = styled.div` 
+ > a {
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #FFF;
+ }
+`
+
 
 export const TodoFormItem = styled.form`
   display: flex;
-  margin: 3% auto;
+  margin: 20px auto 2%;
   justify-content: center;
 `;
 
 export const TodoInput = styled.input`
   width: 100%;
   max-width: 450px;
-  padding: 5px 20px;
+  padding: 15px 20px;
   background: rgb(0 0 0 / 40%);
   color: #fff;
-  border: 1.5px #ccc solid;
+  border: none;
   font-size: 1rem;
   font-style: italic;
-  letter-spacing: 1px;
+  letter-spacing: 1px; 
   outline: none;
+
   &:focus {
-    border: 1.5px #008cff solid;
+    border: 2px rgb(0 96 0) solid;
   }
 `;
 
 export const TodoButton = styled.button`
-  min-width: 60px;
-  background: #008cff;
+  min-width: 80px;
+  background: rgb(0 96 0);
   border: none;
   outline: none;
   color: #fff;
-  cursor: pointer;
+  cursor: pointer; 
+  text-transform: uppercase;
 `;
 
 export const TodoUl = styled.ul`
   padding: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  align-items: center;    
+  padding: 4% 0;
 `;
 
 export const TodoLi = styled.li`
@@ -71,97 +156,39 @@ export const TodoLi = styled.li`
   margin-top: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
+  width: 60%;
+  min-width: 315px;
 
   @media (max-width: 500px) {
     font-size: 0.85rem;
     padding: 10px;
   }
 
-  & span {
-    line-break: anywhere;
+  & p { 
     line-height: 0.95;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
   }
 
-  &:hover {
-    transform: translateY(-5px);
-    background-color: rgb(183 221 245);
-  }
-`;
-
-export const TodoIcons = styled.div`
-  display: flex;
-  min-width: 65px;
-  justify-content: space-between;
-
-  @media (max-width: 500px) {
-    min-width: 40px;
-  }
-
-  & span {
-    @media (max-width: 500px) {
-      font-size: 1.1rem;
-    }
+  &:hover { 
+    background-color: rgb(187 237 197);
   }
 `;
 
-export const TodoMessage = styled.div`
-  display: flex;
-  min-height: 200px;
-  align-items: end;
-  justify-content: center;
-  width: 100%;
-  text-align: center;
-`;
+ 
+ 
 
-export const TodoMessageH2 = styled.h2`
-  color: #bbb;
-  font-weight: 500;
 
-  @media (max-width: 500px) {
-    font-size: 1.1rem;
-  }
-`;
-
-//  TODO USER COMPONENT
-export const TodoUserContainer = styled.div`
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    padding: 10px 5%;
-
-    @media (max-width: 890px) { 
-      grid-template-columns: repeat(4, 1fr);
-    }
-    @media (max-width: 720px) { 
-      grid-template-columns: repeat(3, 1fr);
-    }
-    @media (max-width: 520px) { 
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @media (max-width: 420px) { 
-      grid-template-columns: repeat(1, 1fr);
-    }
-
-  div {
-    background-color: #ccc;
-    padding: 20px;
-    > h3 {
-      margin: 0;
-      font-weight: 400;
-    }
-  } 
-`
 
 //  TODO LOADING COMPONENT
-export const TodoLoadingContainer = styled.div`
-  position: absolute;
-  width: 100%; 
-  background: rgb(240 248 255 / 65%); 
-  z-index: 1;
-  height: 100vh;
+export const TodoLoadingContainer = styled.div` 
+  min-width: 80vw;  
+  z-index: 1; 
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 70vh;
  
 
  > h2 {

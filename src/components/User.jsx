@@ -1,13 +1,26 @@
-import React from "react"; 
+import React from "react";  
+import userImg from "../assets/images/user-lead.png" 
+import { TodoUserGridItem, TodoUserItem } from "../styles/TodoStyled";
 
-const User = ({name}) => {
+const User = ({user}) => {
+
+  console.log(user)
+
+  const {
+    name,
+    username,
+    email
+  } = user 
+
   return (
-    <div>
-      <img src="/assets/img/user.svg" alt="" />
-      <div>
-        <p>{name}</p> 
-      </div>
-    </div>
+      <TodoUserGridItem>
+          <img src={userImg} alt="usuário"/>
+          <div>
+            <h3>{name}</h3> 
+            <span>"{username}"</span>
+            <small>{email}</small>
+          </div>
+      </TodoUserGridItem>
   );
 };
 

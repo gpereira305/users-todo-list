@@ -8,20 +8,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position: relative; 
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.done {
-  text-decoration: line-through;
-  color: rgb(156, 156, 156);
-  font-style: italic;
-  font-weight: 300;
-}
+ 
 
 .fade-in-image {
   animation: fadeIn 1s;

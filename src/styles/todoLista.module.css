@@ -1,0 +1,33 @@
+.undone { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin: 5px;
+    text-decoration: line-through;
+    color: rgb(233, 233, 233);
+    font-style: italic;
+    background-color:   rgb(109 191 125)!important 
+}
+  
+  .done { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin: 5px; 
+}
+   
+  
+  .title {
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  .checked {
+    color: green;
+  }
+  .unchecked {
+    color: red;
+  }
+  
