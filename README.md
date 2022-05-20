@@ -32,7 +32,7 @@
  ## Como instalar em ambiente local
  - Na página desse projeto no Github clique em "Code", baixe o Zip ou copie o link  do HTTPS. 
  - Abra um terminal em uma pasta de sua escolha e cole o link HTTPS. 
- - Certifique-se de ter instalado o Node em uma versão suiperior a 14.0. 
+ - Certifique-se de ter instalado o Node em uma versão superior a 14.0. 
  - Após baixar o pojeto em um diretório de sua escolha digite o comando "npm install". 
  - Após o término de todas as depedências serem baixadas pelo npm digite no mesmo diretório o comando "npm start". 
  - O seu navegador padrão irá mostrar uma nova aba com o projeto já pronto para ser usado 
