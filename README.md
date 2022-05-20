@@ -21,7 +21,7 @@
 - Visualizar tarefas de cada usuário, já concluídas e pendentes;
 - Inserir novas tarefas e marcá-las como concluída ou não; 
 
- ## Tecnologias utilizadas nessa aplicação
+ ## Tecnologias usadas nessa aplicação
 
 - <a href="https://pt-br.reactjs.org/"> React </a> 
 - <a href="https://axios-http.com/ptbr/docs/intro"> Axios </a>
@@ -29,7 +29,7 @@
 - <a href="https://styled-components.com/"> Styled-components</a>
 
 
- ## Como ter essa aplicação em ambinente local
+ ## Como instalar em ambiente local
  - Na página desse projeto no Github clique em "Code", baixe o Zip ou copie o link  do HTTPS. 
  - Abra um terminal em uma pasta de sua escolha e cole o link HTTPS. 
  - Certifique-se de ter instalado o Node em uma versão suiperior a 14.0. 
